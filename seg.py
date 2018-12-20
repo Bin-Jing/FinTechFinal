@@ -36,6 +36,9 @@ def cutImg(name):
 
     code_img = raw_img[code_y:code_y+code_h, 0:w]
     cv2.imwrite('code.jpg', code_img)
+    
+    codeEN_img = raw_img[code_y:code_y+code_h, 0:int(w/4)]
+    cv2.imwrite('codeEN.jpg', codeEN_img)
 
     cash_y = code_y + code_h
     cash_h = 660
@@ -43,4 +46,4 @@ def cutImg(name):
     cash_img = raw_img[cash_y:cash_y+cash_h, 0:w]
     cv2.imwrite('cash.jpg', cash_img)
 
-cutImg("img.jpg")
+
