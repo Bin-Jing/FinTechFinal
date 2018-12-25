@@ -25,8 +25,8 @@ def cutImg(name):
     store_img = raw_img[store_y:store_y+store_h, 0:w]
     cv2.imwrite('store.jpg', store_img)
 
-    date_y = store_h
-    date_h = 50
+    date_y = 0
+    date_h = 100
 
     date_img = raw_img[date_y:date_y+date_h, 0:w]
     cv2.imwrite('date.jpg', date_img)
