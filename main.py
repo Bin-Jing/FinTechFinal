@@ -12,15 +12,16 @@ class Receipt:
         code = DeCode()
         storeDate = StoreText(key)
         CashT = CashText(key)
-        
+
         print(code)
         print(storeDate)
         print(CashT)
+        txtf = open("Output.txt", "w")
+        txtf.write("{0}\n{1}\n{2}".format(code,storeDate,CashT))
+        txtf.close()
 
 
-if __name__ == '__main__':
-    r = Receipt("img.jpg")
-    r.main()
+
 
 
 
